@@ -1,0 +1,288 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 15px;
+}
+
+.first-section {
+    background-image: url(Background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 900px;
+}
+
+.nav {
+    display: inline-block;
+    width: 100%;
+}
+
+h3 {
+    font-family: Inter;
+    font-size: 2rem;
+    font-weight: 900;
+    color: white;
+    margin: 0;
+    padding: 34px 0 0 32px;
+    float: left;
+}
+
+.top {
+    padding: 38px 32px 0 0;
+    display: flex;
+    flex-direction: column;
+    float: right;
+}
+
+.slash {
+    margin-top: 2px;
+}
+
+.white-box {
+    height: 20px;
+    width: 50px;
+    background-color: white;
+    padding: 0 32px;
+    margin: 0 32px;
+    margin-top: 216px;
+}
+
+h1 {
+    font-family: Libre Caslon Display;
+    font-size: 3.5rem;
+    font-weight: 500;
+    text-align: left;
+    color: white;
+    padding: 32px 32px;
+    margin: 0;
+    line-height: 4rem;
+
+
+}
+
+.text {
+    font-family: Inter;
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin: 0 32px;
+    text-align: left;
+    color: white;
+    line-height: 2rem;
+}
+
+.btn {
+    border: 3px solid white;
+    border-radius: 14px;
+    background: none;
+    color: white;
+    margin: 32px;
+    width: 160px;
+    height: 50px;
+    font-family: Inter;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+h2 {
+    color: black;
+    font-family: Inter;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 78px 32px;
+}
+
+.news-item1 {
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin: 0 32px;
+    margin-top: 32px;
+
+}
+
+
+.news {
+    width: 100%;
+
+}
+
+.date {
+    color: #B7B7B7;
+    padding: 35px 0 28px 32px;
+    font-size: 1.25rem;
+}
+
+.detail {
+    padding: 0 32px;
+    color: black;
+    font-family: Inter;
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 2rem;
+    text-align: left;
+}
+
+.read {
+    font-family: Inter;
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin: 30px 32px 32px 45%;
+    color: #D9852C;
+}
+
+.read:hover {
+    cursor: pointer;
+}
+.expand{
+    display:none;
+}
+.menu{
+    float: right;
+    color: #ffffff;
+    margin-top: 36px;
+    margin-right: 36px;
+}
+
+@media screen and (min-width:576px) {
+    html {
+        font-size: 16px;
+    }
+    h3{
+        padding: 40px 0 0 32px;
+    }
+    .part{
+        margin-left: 45px;
+    }
+    .text {
+        font-size: 1rem;
+    }
+
+    .slash {
+        width: 50px;
+        margin-top: 5px;
+    }
+
+    .news-item {
+        display: flex;
+        margin: 32px 60px 32px 60px;
+        justify-content: space-between;
+    }
+
+    .news-item1 {
+        margin: 0;
+        width: 30%;
+    }
+
+    .detail {
+        line-height: 1rem;
+        font-size: 1rem;
+        min-height: 160px;
+    }
+
+    .read {
+        font-size: 0.85rem;
+        margin: 30px 32px 32px 20%;
+    }
+
+    .date {
+        font-size: 0.75rem;
+        padding: 10px 0 10px 32px;
+    }
+
+    .news {
+        min-height: 250px;
+    }
+
+    h2 {
+        margin: 50px 65px;
+        font-size: 2.5rem;
+    }
+    .expand{
+        display: none;
+    }
+}
+
+
+@media screen and (min-width: 768px)  {
+
+
+    .top {
+        display: none;
+    }
+    .expand{
+        display: block;
+    }
+    .expand {
+        float: right;
+        padding: 38px 32px 0 0;
+    }
+    .btn2{
+        display: none;
+    }
+    a {
+        text-decoration: none;
+        color: white;
+        font-family: Inter;
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 22px;
+        margin:0 12px;
+
+    }
+    .btn2{
+        border: 1px solid white;
+        border-radius: 10px;
+        background: none;
+        color: white;
+        width: 130px;
+        height: 35px;
+        font-family: Inter;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    h1 {
+        max-width: 55%;
+
+    }
+    .text{
+        max-width: 40%;
+    }
+    .part{
+        margin-left: 64px;
+    }
+    .detail {
+        line-height: 1.25rem;
+        font-size: 1.25rem;
+        min-height: 160px;
+    }
+    .menu{
+        display: none;
+    }
+
+}
+
+@media screen and (min-width:966px)  {
+    .btn2{
+        display: inline-block;
+    }
+    .detail {
+        line-height: 1.5rem;
+        font-size: 1.5rem;
+        min-height: 160px;
+    }
+
+    .read {
+        font-size: 1rem;
+        margin: 30px 32px 32px 45%;
+    }
+    .date{
+        font-size: 1rem;
+    }
+    .menu{
+        display: none;
+    }
+
+
+}
